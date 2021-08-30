@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    background-image: url('../images/pattern-background-desktop.svg');
+    width: 100%;
+    height: 66vh;
+    z-index: -1;
+}
+
+.card {
+    max-width: 350px;
+    background-color:#fff;
+    border-radius: 20px ;
+    overflow: hidden;
+    box-shadow: 0 10px 30px -20px rgba(0, 0, 0, 0.4);
+}
+
+.card > img {
+ display: flex;
+ width: 100%;
+}
+
+.card > h1 {
+    text-align: center;
+    color: hsl(223, 47%, 23%);
+    margin: 20px 0;
+}
+
+.card > p {
+    font-size: 16px;    
+    text-align: center;
+    color:hsl(224, 23%, 55%);
+}
+
+.card-plan-info {
+    display: flex;
+    align-items: center;
+    background-color:hsl(225, 100%, 98%) ;
+    width: 85%;
+    margin: 20px auto;
+    padding: 15px;
+    list-style: none;
+    border-radius: 10px;
+    
+}
+
+.card-plan-info > li:nth-child(1) {
+    width: 20%;
+    
+}
+
+.card-plan-info > li:nth-child(2) {
+    width: 50%;
+    padding-left: 10px;
+
+}
+
+.card-plan-info > li:nth-child(2) > strong {
+    color: hsl(228, 45%, 44%);
+
+}
+
+.card-plan-info > li:nth-child(2) > span {
+    color: hsl(224, 23%, 55%) ;
+
+}
+
+.card-plan-info > li:nth-child(3) {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card-plan-info > li:nth-child(3) > a {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    transition: all 300ms;
+
+
+}
+.card-plan-info > li:nth-child(3) > a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color:hsl(223, 47%, 23%);
+}
+
+
+.btn-payment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:15px;
+    width: 85%;
+    border-radius: 10px;
+    margin: 0 auto;
+    border: none;
+    text-align: center;
+    font-weight: bold;
+    background-color: hsl(245, 75%, 52%);
+    box-shadow: 0 5px 10px hsl(224, 23%, 55%);
+    color: #fff;
+    transition: all 300ms;
+    margin-bottom: 10px;
+
+    
+}
+
+.btn-payment:hover {
+    cursor: pointer;
+    background-color:hsl(224, 23%, 55%);
+    box-shadow: 0 10px 20px hsl(224, 23%, 55%);
+
+}
+
+.btn-cancel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:15px;
+    width: 85%;
+    border-radius: 10px;
+    margin: 0 auto;
+    border: none;
+    text-align: center;
+    font-weight: bold;
+    background-color: transparent;
+    color: hsl(224, 23%, 55%);
+    transition: all 300ms;
+    margin-bottom: 20px;
+
+}
+
+.btn-cancel:hover {
+    cursor: pointer;
+    color: hsl(228, 45%, 44%);
+}
